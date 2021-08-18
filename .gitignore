@@ -1,0 +1,22 @@
+﻿# Dossiers de fichiers générés
+bin
+obj
+ipch
+x64
+.vs
+
+
+# Dossiers à exclure
+/poubelle
+
+# Extensions à exclure
+*.suo
+*.db
+*.jbf
+*.sdf
+
+# Fichier Mac
+.DS_Store
+
+# Préférences utilisateur
+*.user
