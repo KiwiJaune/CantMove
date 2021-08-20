@@ -9,7 +9,7 @@ namespace CantMove
     {
         static void Main()
         {
-            String folder = "D:/LOCKED2/";
+            String folder = "D:/LOCKED/";
 
             if (!Directory.Exists(folder))
             {
@@ -25,7 +25,7 @@ namespace CantMove
                 {
                     try
                     {
-                        ExportFile(folder + DateTime.Now.Ticks + ".txt", "This is the file content.");
+                        ExportFile(folder + DateTime.Now.Ticks.ToString() + i.ToString() + ".txt", "This is the file content.");
                         Console.WriteLine("No error");
                     }
                     catch (Exception ex)
@@ -37,7 +37,6 @@ namespace CantMove
                 Console.Write("Again ? y/n : ");
             }
             while (Console.ReadKey().KeyChar == 'y');
-
         }
 
         private static void ExportFile(string fileName, string content)
